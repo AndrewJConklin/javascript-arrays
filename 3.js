@@ -14,7 +14,10 @@ function getSpanishAlphabet(){
   let spanishAlphabet
 
   // Your code here
-
+  spanishAlphabet = alphaNumericAlphabet.splice(10, 26);
+  spanishAlphabet.splice(3, 0, "ch");
+  spanishAlphabet.splice(15, 0, "ñ");
+  spanishAlphabet.splice(13, 0, "ll");
   return spanishAlphabet
 }
 

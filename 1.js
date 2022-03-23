@@ -14,9 +14,14 @@ Note:
 
 function getVowels(){
   const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-  let vowels
+  let vowels = []
 
   // Your code here
+for (let letter of alphabet){
+    if (letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u" || letter === "y") {
+      vowels.push(letter)
+    }
+}
 
   return vowels
 }
